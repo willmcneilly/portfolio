@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+	<title>Will McNeilly; Belfast based multidisciplinary Designer</title>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+	  article, aside, details, figcaption, figure, footer, header,
+	  hgroup, menu, nav, section { display: block; }
+	</style>
+	<link href="style.min.css" media="screen" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="http://use.typekit.com/bji5pxv.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="js/jquery.inview.min.js"></script>
+	<script src="js/social-me.js"></script>
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script src="js/fancybox/jquery.easing-1.3.pack.js"></script>
+	<script>
+	
+	$(document).ready(function(){
+		
+		
+		$("a.grouped_elements").fancybox();
+		$('#global-nav').localScroll();
+
+		
+		
+    var location = $('nav#global-nav').position().top;
+    
+    
+    $(window).scroll(function() {
+        if(location >= $(window).scrollTop()) {
+            if($('nav#global-nav').hasClass('fixed')) {
+                $('nav#global-nav').removeClass('fixed');
+            }
+        } else { 
+            if(!$('nav#global-nav').hasClass('fixed')) {
+                $('nav#global-nav').addClass('fixed');
+            }
+        }
+   
+	});
+	
+	
+	$("#recent-work").bind("inview", function(event, isInView, visiblePartX, visiblePartY) {
+ 		 if (isInView) {
+    		$('a[href*="recent-work"]').addClass('selected');
+ 	 	} else {
+			$('a[href*="recent-work"]').removeClass('selected');
+   
+  		}
+	});
+	
+	
+	$("#about").bind("inview", function(event, isInView, visiblePartX, visiblePartY) {
+ 		 if (isInView) {
+    		$('a[href*="about"]').addClass('selected');
+ 	 	} else {
+			$('a[href*="about"]').removeClass('selected');
+   
+  		}
+	});
+	
+	$("#contact").bind("inview", function(event, isInView, visiblePartX, visiblePartY) {
+ 		 if (isInView) {
+    		$('a[href*="contact"]').addClass('selected');
+ 	 	} else {
+			$('a[href*="contact"]').removeClass('selected');
+   
+  		}
+	});
+});
+	</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2278439-10']);
+  _gaq.push(['_setDomainName', '.willmcneilly.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<header id="global-header">
+		<hgroup>
+			<h1 class="brand-logo">Will McNeilly</h1>
+			<h2 id="tagline">est. 1986</h2>
+		</hgroup>
+		<p id="content-introduction">Will McNeilly; a pixel-wrangling, georgia-at-16px/24px-loving,<br/> podcarting, <a class="my-readernaut" href="http://readernaut.com/willmcneilly/" alt="My ReaderNaut Profile">Kurt-Vonnegut-reading</a>, <a class="lastFM" href="http://www.last.fm/user/confused031" alt="My Last.fm profile">Mew-Scrobbling</a>, beard-growing, Belfast-living, primal-eating, tea-drinking, distance-running — <em>designer.</em></p>
+		<a id="blog-tab"href="http://willmcneilly.com">Will's Blog</a>
+	</header>
+	<nav id="global-nav">
+		
+		<ul>
+			<li><a href="#recent-work" title="Recent Work">Recent Work</a></li>
+			<li><a href="#about" title="About">About</a></li>
+			<li><a href="#contact" title="Contact">Contact</a></li>
+		</ul>
+		
+	</nav>
+	<section id="recent-work" class="main-section">
+		<header>
+			<h1>Recent Work</h1>
+		</header>
+		<section id="web-section" class="sub-section">
+			<div class="info-column">
+				<header>
+					<h1>Web Design &amp; Development</h1>
+				</header>
+				<p>Web Design and Development is my bread and butter. Here you will find various websites I've created over the last couple of years.</p>
+			</div>
+			<div class="image-column">
+				<ul>
+					<li>
+						<a href="images/gallery/web-dev/ctw.php" class="grouped_elements" rel="design-and-dev">
+							<figure>
+								<img src="images/gallery/web-dev/ctw-small.gif" width="168" height="168" alt="Catch the Worm App"/>
+								<figcaption>Catch the Worm App</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="http://scmweb.infj.ulst.ac.uk/~B00472116/">
+							<figure>
+								<img src="images/gallery/web-dev/jquery-goodness-small.gif" width="168" height="168" alt=""/>
+								<figcaption>JQuery Goodness</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="http://catchtheworm.co/grow-website/" >
+							<figure>
+								<img src="images/gallery/web-dev/grow-small.gif" width="168" height="168" alt=""/>
+								<figcaption>Grow Community Gardens</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.mcneillbusiness.com/">
+							<figure>
+								<img src="images/gallery/web-dev/mcneill-business-small.gif" width="168" height="168" alt=""/>
+								<figcaption>McNeill Business Travel</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.catchtheworm.co/decypher/">
+							<figure>
+								<img src="images/gallery/web-dev/decypher-small.gif" width="168" height="168" alt=""/>
+								<figcaption>Decypher_ Facebook App</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="grouped_elements" rel="design-and-dev">
+							<figure>
+								<img src="images/gallery/web-dev/belfast-mela-small.gif" width="168" height="168" alt=""/>
+								<figcaption>Belfast Mela</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</div><!-- .image-column -->
+		</section><!-- #web-section -->
+		<section id="print-section" class="sub-section">
+			<div class="info-column">
+				<header>
+					<h1>Design for Print</h1>
+				</header>
+				<p>I'm just as comfortable designing for print. Here are a few recent projects most of these are from working as In-House Designer in the travel Industry.</p>
+			</div>
+			<div class="image-column">
+				<ul>
+					<li>
+						<a href="images/gallery/print/business-travel-pullup.gif" class="grouped_elements" rel="print">
+							<figure>
+								<img src="images/gallery/print/business-travel-pullup-small.gif" width="168" height="168" alt="Promotional Pullup Banner"/>
+								<figcaption>Promotional Pullup Banner</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/print/mcneill-and-thriftway-logo.gif" class="grouped_elements" rel="print">
+							<figure>
+								<img src="images/gallery/print/mcneill-and-thriftway-logo-small.gif" width="168" height="168" width="168" height="168" alt="McNeill and Thriftway Worldwide Travel Branding"/>
+								<figcaption>McNeill and Thriftway Worldwide Travel Branding</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/print/podcart-poster-set.gif" class="grouped_elements" rel="print">
+							<figure>
+								<img src="images/gallery/print/podcart-poster-set-small.gif" width="168" height="168" alt="Ltd Edition Poster Set"/>
+								<figcaption>Ltd Edition Poster Set</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/print/gazelle-logo-final.png" class="grouped_elements" rel="print">
+							<figure>
+								<img src="images/gallery/print/gazelle-logo-small.gif" width="168" height="168" alt="Gazelle Racing Branding"/>
+								<figcaption>Gazelle Racing Branding</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/print/oxjam-poster.gif" class="grouped_elements" rel="print">
+							<figure>
+								<img src="images/gallery/print/oxjam-poster-small.gif" width="168" height="168" alt="Oxjam Gig Poster"/>
+								<figcaption>Oxjam Gig Poster</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/print/podcart-brand.gif" class="grouped_elements" rel="print">
+							<figure>
+								<img src="images/gallery/print/podcart-brand-small.gif" width="168" height="168" alt="Glasgow PodcART Brand"/>
+								<figcaption>Glasgow PodcART Brand</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</div><!-- .image-column -->
+		</section><!-- #print-section -->
+		<section id="illustration-section" class="sub-section">
+			<div class="info-column">
+				<header>
+					<h1>Illustration</h1>
+				</header>
+				<p>I love to draw, whether it's with a pencil or Graphics Tablet.</p>
+			</div>
+			<div class="image-column">
+				<ul>
+					<li>
+						<a href="images/gallery/illustration/ctw-badges.gif" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/ctw-badge-small.gif" width="168" height="168" alt="Catch the Worm Badges"/>
+								<figcaption>'Catch the Worm' Badges</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/illustration/fareteam-commander.gif" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/fareteam-commander-small.gif" width="168" height="168" alt="Fareteam Commander Mascot"/>
+								<figcaption>Fareteam Commander Mascot</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/illustration/podcart14.png" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/podcart14-small.png" width="168" height="168" alt="Glasgow Podcart Ep14 Art"/>
+								<figcaption>Glasgow Podcart Ep14 Art</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/illustration/podcart19.png" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/podcart19-small.jpg" width="168" height="168" alt="Glasgow Podcart Ep19 Art"/>
+								<figcaption>Glasgow Podcart Ep19 Art</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/illustration/podcart22.png" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/podcart22-small.jpg" width="168" height="168" alt="Glasgow Podcart Ep22 Art"/>
+								<figcaption>Glasgow Podcart Ep22 Art</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/illustration/podcart25.png" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/podcart25-small.jpg" width="168" height="168" alt="Glasgow Podcart Ep25 Art"/>
+								<figcaption>Glasgow Podcart Ep25 Art</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/illustration/podcart28.png" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/podcart28-small.gif" width="168" height="168" alt="Glasgow Podcart Ep28 Art"/>
+								<figcaption>Glasgow Podcart Ep28 Art</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/illustration/podcart33.png" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/podcart33-small.gif" width="168" height="168" alt="Glasgow Podcart Ep33 Art"/>
+								<figcaption>Glasgow Podcart Ep33 Art</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/illustration/podcart36.png" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/podcart36-small.gif" width="168" height="168" alt="Glasgow Podcart Ep36 Art"/>
+								<figcaption>Glasgow Podcart Ep36 Art</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/illustration/podcart41.png" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/podcart41-small.gif" width="168" height="168" alt="Glasgow Podcart Ep41 Art"/>
+								<figcaption>Glasgow Podcart Ep41 Art</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/illustration/podcart45.png" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/podcart45-small.jpg" width="168" height="168" alt="Glasgow Podcart Ep45 Art"/>
+								<figcaption>Glasgow Podcart Ep45 Art</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery/illustration/podcart55.png" class="grouped_elements" rel="illustration">
+							<figure>
+								<img src="images/gallery/illustration/podcart55-small.gif" width="168" height="168" alt="Glasgow Podcart Ep55 Art"/>
+								<figcaption>Glasgow Podcart Ep55 Art</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</div><!-- .image-column -->
+		</section><!-- #illustration-section -->
+	</section><!-- #recent-work -->
+	<section id="about" class="main-section">
+		<header>
+			<h1>About Will</h1>
+		</header>
+		<div class="column1">
+			<h2>A Short Introduction</h2>
+			<p>I'm a Multidisciplinary Designer based in Belfast, Northern Ireland. I'm currently studying Interactive Multimedia Design at University of Ulster and will Graduate in June this year.</p>
+			<p>For the last three years I've worked as an in-house designer at <a href="www.mcneillandthriftway.com">McNeill & Thriftway Worldwide Travel</a>. In this time I have been responsible for the rebranding of the company and the design of web applications for public and trade use.</p>
+			<p>I was involved in the founding and initial branding of successful 'grassroots' music podcast and blog; <a href="http://www.glasgowpodcart.com">Glasgow PodcART</a></p>
+			<p>When I'm not designing I enjoy many activities including, distance running, hill walking, playing guitar and photography.</p>
+		</div>
+		<div class="column2">
+			<h2>Services</h2>
+			<p>I carry out freelance work and can provide a range of services:</p>
+			<ul>
+				<li>Bespoke Web App Design and Development</li>
+				<li>Blogging platform theming (Wordpress, Tumblr and Drupal)</li>
+				<li>Mobile device optimised web applications</li>
+				<li>Brand Design</li>
+				<li>Illustration</li>
+			</ul>
+			<p>Want to check out my <a href="images/CV-of-will-mcneilly.pdf">CV</a>?</p>
+		</div>
+	</section><!-- #about -->
+	<section id="contact" class="main-section">
+		<header>
+			<h1>Contact Will</h1>
+		</header>
+		<div class="column1">
+			<h2>Work</h2>
+			<p>I'm currently taking on freelance work so if you think I can help you, don't hesitate to get in contact.</p>
+			<p>For a general query about my services or for a quote email, <a href="mailto:info@willmcneilly.com">info@willmcneilly</a></p>
+		</div>
+		<div class="column2">
+			<h2>Elsewhere on the Intertubes</h2>
+			<p>I'm quite a sociable geek and can found all over the web. </p>
+			<ul class="social-links">
+				<li><a href="http://twitter.com/#!/willmcneilly" title="Will McNeilly's Twitter">Twitter</a></li>
+				<li><a href="http://www.facebook.com/willmcneilly">Facebook</a></li>
+				<li><a href="http://www.last.fm/user/confused031">Last.fm</a></li>
+				<li><a href="http://dribbble.com/willmcneilly">Dribbble</a></li>
+				<li><a href="http://zootool.com/user/willmcneilly/">Zootool</a></li>
+				<li><a href="http://readernaut.com/willmcneilly/">Readernaut</a></li>
+				<li><a href="http://www.flickr.com/people/38358115@N08/">Flickr</a></li>
+			
+			
+			</ul>
+		</div>
+	</section><!-- #contact -->
+</div><!-- #wrapper -->
+</body>
+</html>
